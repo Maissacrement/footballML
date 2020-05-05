@@ -1,0 +1,13 @@
+{% include './base.html' %}
+
+{% block body %}
+  {% if exo == 'exo2' %}
+    {% include './table.html' %}
+  {% endif %}
+  {% if exo == 'exo3' %}
+    {% include './tableEx3.html' %}
+  {% endif %}
+  {% if exo == 'exo4' %}
+    {% include './analyseEx4.html' %}
+  {% endif %}
+{% endblock %}

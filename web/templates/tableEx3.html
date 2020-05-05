@@ -1,0 +1,19 @@
+<table class="table" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      {% for label in labels %}
+        <th scope="col">{{ label }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for columns_count, lines_counts in data.iterrows() %}
+    <tr>
+      <th scope="row">{{columns_count[0]}}</th>
+      <td>{{lines_counts[1]}}</td>
+      <td>{{lines_counts[0]}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

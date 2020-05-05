@@ -1,0 +1,11 @@
+pandas
+seaborn
+matplotlib
+
+scikit-learn
+mglearn
+IPython
+
+uwsgi
+flask
+setuptools

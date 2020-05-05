@@ -1,0 +1,20 @@
+<table class="table" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      {% for label in resume %}
+        <th scope="col">{{ label }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for index, df in resume.iterrows() %}
+    <tr>
+      <th scope="row">{{index}}</th>
+      {% for data_field in df.values %}
+      <td>{{data_field}}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
