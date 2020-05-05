@@ -1,9 +1,13 @@
-# Python project de data science
+# footballML
 
-# How to run
+## How to run
 
-# LINUX
+### LINUX
 
 local: `python3 ./app.py` or `make local`
 web: `app.sh prod` or `app.sh prodtest`
-# footballML
+
+### DOCKER
+
+docker-dev: make run
+docker-prod: make prod

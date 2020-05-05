@@ -20,8 +20,13 @@ prod:
 build:
 		docker build . -t ubuntu2
 
-dev:
+docker-dev:
 		docker run --rm -ti -e DISPLAY=$(DISPLAY) \
     	-v /tmp/.X11-unix:/tmp/.X11-unix \
+			-p 8000:8000 \
+		ubuntu2
+
+docker-prod:
+		docker run --rm -ti \
 			-p 8000:8000 \
 		ubuntu2
