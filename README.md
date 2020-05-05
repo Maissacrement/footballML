@@ -9,5 +9,7 @@ web: `app.sh prod` or `app.sh prodtest`
 
 ### DOCKER
 
+build: make build
+
 docker-dev: make run
 docker-prod: make prod
